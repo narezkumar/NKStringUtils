@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0E210DD31D8FAF5F0096C8F5 /* NKStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E210DD21D8FAF5F0096C8F5 /* NKStringUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E210DDB1D8FAF6F0096C8F5 /* NKStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E210DDA1D8FAF6F0096C8F5 /* NKStringUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E210DCF1D8FAF5F0096C8F5 /* NKStringUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NKStringUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E210DD21D8FAF5F0096C8F5 /* NKStringUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKStringUtils.h; sourceTree = "<group>"; };
 		0E210DD41D8FAF5F0096C8F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E210DDA1D8FAF6F0096C8F5 /* NKStringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKStringUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		0E210DD11D8FAF5F0096C8F5 /* NKStringUtils */ = {
 			isa = PBXGroup;
 			children = (
+				0E210DDA1D8FAF6F0096C8F5 /* NKStringUtils.swift */,
 				0E210DD21D8FAF5F0096C8F5 /* NKStringUtils.h */,
 				0E210DD41D8FAF5F0096C8F5 /* Info.plist */,
 			);
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E210DDB1D8FAF6F0096C8F5 /* NKStringUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,28 +234,33 @@
 		0E210DD81D8FAF5F0096C8F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NKStringUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcs.NKStringUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0E210DD91D8FAF5F0096C8F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NKStringUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcs.NKStringUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +287,7 @@
 				0E210DD91D8FAF5F0096C8F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
